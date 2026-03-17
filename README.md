@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TechAvacoo.studios</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+/* NAVBAR */
+nav{
+    position:fixed;
+    width:100%;
+    top:0;
+    backdrop-filter:blur(10px);
+    background:rgba(0,0,0,0.5);
+    padding:15px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:1000;
+}
+
+.nav-left{
+    display:flex;
+    align-items:center;
+}
+
+.nav-left img{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    margin-right:10px;
+}
+
+.nav-left span{
+    color:white;
+    font-weight:600;
+    font-size:18px;
+}
+
+.nav-links a{
+    color:white;
+    margin-left:25px;
+    text-decoration:none;
+    font-weight:500;
+    position:relative;
+}
+
+.nav-links a::after{
+    content:"";
+    position:absolute;
+    width:0;
+    height:2px;
+    bottom:-5px;
+    left:0;
+    background:#38bdf8;
+    transition:0.3s;
+}
+
+.nav-links a:hover::after{
+    width:100%;
+}
+
+/* SECTIONS */
+section{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:40px;
+    color:white;
+}
+
+.overlay{
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(12px);
+    padding:50px;
+    border-radius:20px;
+    max-width:750px;
+    animation:fadeUp 1s ease;
+}
+
+h1{
+    font-size:42px;
+    margin-bottom:15px;
+}
+
+p{
+    line-height:1.6;
+    font-weight:300;
+}
+
+/* BUTTON */
+.btn{
+    margin-top:25px;
+    display:inline-block;
+    padding:12px 30px;
+    background:#38bdf8;
+    color:black;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:scale(1.05);
+    background:#0ea5e9;
+}
+
+/* BACKGROUNDS */
+#home{
+    background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+    url('https://images.unsplash.com/photo-1518770660439-4636190af475') no-repeat center/cover;
+}
+
+#about{
+    background:linear-gradient(rgba(20,20,60,0.85), rgba(20,20,60,0.85)),
+    url('https://images.unsplash.com/photo-1498050108023-c5249f4df085') no-repeat center/cover;
+}
+
+#contact{
+    background:linear-gradient(rgba(0,60,80,0.85), rgba(0,60,80,0.85)),
+    url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d') no-repeat center/cover;
+}
+
+/* EMAIL */
+.email-box{
+    margin-top:20px;
+    font-size:18px;
+    font-weight:500;
+}
+
+.email-box a{
+    color:#38bdf8;
+    text-decoration:none;
+}
+
+.email-box a:hover{
+    text-decoration:underline;
+}
+
+/* FOOTER */
+footer{
+    background:#000;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+
+/* ANIMATION */
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    nav{
+        flex-direction:column;
+    }
+
+    .nav-links{
+        margin-top:10px;
+    }
+
+    h1{
+        font-size:30px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <div class="nav-left">
+        <img src="TechAvacoo_circle_logo.png">
+        <span>TechAvacoo.studios</span>
+    </div>
+
+    <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<!-- HOME -->
+<section id="home">
+    <div class="overlay">
+        <h1>Building Digital Excellence</h1>
+        <p>
+            We design and develop premium websites for Resorts, Cafes,
+            Hospitality & Modern Businesses.
+        </p>
+        <a href="#contact" class="btn">Get Started</a>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+    <div class="overlay">
+        <h1>About Us</h1>
+        <p>
+            TechAvacoo.studios is a creative web development team focused on building
+            unique and visually powerful websites. Our team works on crafting modern,
+            aesthetic UI/UX experiences that make your brand stand out in the digital world.
+            <br><br>
+            We specialize in creating dynamic and engaging backgrounds such as
+            auto-changing visuals, smooth animated transitions, and even
+            high-quality video backgrounds.
+            <br><br>
+            Whether it's a sky-themed design, dark premium layouts, or a fully customized
+            visual experience — we bring your ideas to life.
+            <br><br>
+            If you own a resort, café, or any business, we can showcase your
+            real environment by placing your own videos as background,
+            making your website more attractive, immersive, and professional.
+        </p>
+
+        <div style="margin-top:25px;">
+            <h3>TEAM TechAvacoo</h3>
+            <p style="margin-top:10px; font-weight:500;">
+                CEO: Sagar Prajapati <br>
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <div class="overlay">
+        <h1>Contact Us</h1>
+        <p>Reach us via email:</p>
+        <div class="email-box">
+            📩 <a href="mailto:techavacoo.studio@gmail.com">techavacoo.studio@gmail.com</a>
+        </div>
+    </div>
+</section>
+
+<footer>
+    © 2026 TechAvacoo.studios | Designed with Excellence
+</footer>
+
+</body>
+</html>
